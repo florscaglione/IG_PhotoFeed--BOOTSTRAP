@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>IG Photo Feed con Bootstrap</title>
+    <script src="https://kit.fontawesome.com/65fac68712.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid pt-5" style="padding: 0">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="padding-left: 50px;">
+            <div class="container-fluid">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="http://www.instagram.com">
+                    <i class="fab fa-instagram" style="font-size: 30px;"></i>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png"
+                        alt="" width="100" height="37" class="d-inline-block img-fluid align-top ">
+                </a>
+
+                <div class="navbar-nav">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-success my-2 my-sm-0" data-toggle="modal"
+                        data-target="#exampleModal">
+                        Create a new post
+                    </button>                    
+
+                    <!-- Dropdown -->
+                    <div class="dropdown">
+                        <ul class="nav navbar-right mr-5">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-cog"></i>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Log out</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Pills plugin -->
+        <nav>
+            <div class="nav nav-pills my-4 justify-content-center" id="pills-tab" role="tablist">
+                <a class="nav-item nav-link active bg-light text-dark" id="pills-stacked-tab" data-toggle="pill" href="#pills-stacked" role="presentation" aria-controls="pills-stacked" aria-selected="true">
+                    <i class="fas fa-th"></i>
+                </a>
+                <a class="nav-item nav-link bg-light text-dark" id="pills-displayed-tab" data-toggle="pill" href="#pills-displayed" role="presentation" aria-controls="pills-displayed" aria-selected="false">
+                    <i class="fas fa-square"></i>
+                </a>
+            </div>
+        </nav>
+        
+        <!-- Items: 3 column images -->
+        <div class="tab-content mb-5" id="pills-tabContent"> 
+          <div class="tab-pane fade show active" id="pills-stacked" role="tabpanel" aria-labelledby="pills-stacked-tab">
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://picsum.photos/id/237/500/300" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/297/500/300" class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="flex-direction: row;">
+                    <video class="img-fluid" playsinline autoplay muted loop style="justify-content: center;">
+                        <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" >
+                    </video>                
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://picsum.photos/id/137/500/300" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/397/500/300" class="card-img-top" alt="...">
+                </div>
+                <div class="card" style="flex-direction: row;">
+                    <video class="img-fluid" playsinline autoplay muted loop style="justify-content: center;">
+                        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4" >
+                    </video>                  
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="https://picsum.photos/id/277/500/300" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/255/500/300" class="card-img-top" alt="...">
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/244/500/300" class="card-img-top" alt="...">
+                </div>
+            </div>
+        </div>
+
+        <!-- Items: one column -->
+        <div class="tab-pane fade" id="pills-displayed" role="tabpanel" aria-labelledby="pills-displayed-tab" style="background-color: lightgray; padding-top: 20px; padding-bottom: 30px;">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">My first photo</h5>
+                            <h5 class="col-2 card-text text-secondary">12/14</h5>
+                        </div>
+                        <img src="https://picsum.photos/id/237/600/400" class="card-img-top">
+                        <p class="px-3 py-2 mb-0">23 likes</p>
+                        <p class="px-3 text-justify">This is my firts photo of the feed. This is a multiline comment for testing purposes. I am learning to code with #Breathcode</p>
+                        <div class="card-body py-0 text-secondary">
+                            <i class="far fa-heart pl-2 d-inline-block"></i>
+                            <p class="d-inline-block pl-2">Comment...</p>
+                            <i class="fas fa-ellipsis-v pl-2 d-inline-block float-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">My first photo</h5>
+                            <h5 class="col-2 card-text text-secondary">12/14</h5>
+                        </div>
+                        <img src="https://picsum.photos/id/297/500/300" class="card-img-top">
+                        <p class="px-3 py-2 mb-0">23 likes</p>
+                        <p class="px-3 text-justify">This is my firts photo of the feed. This is a multiline comment for testing purposes. I am learning to code with #Breathcode</p>
+                        <div class="card-body py-0 text-secondary">
+                            <i class="far fa-heart pl-2 d-inline-block"></i>
+                            <p class="d-inline-block pl-2">Comment...</p>
+                            <i class="fas fa-ellipsis-v pl-2 d-inline-block float-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">My first video</h5>
+                            <h5 class="col-2 card-text text-secondary">12/14</h5>
+                        </div>
+                        <video class="img-fluid" playsinline autoplay muted loop style="justify-content: center;">
+                            <source src="https://mdbootstrap.com/img/video/animation-intro.mp4" type="video/mp4" >
+                        </video>   
+                        <p class="px-3 py-2 mb-0">23 likes</p>
+                        <p class="px-3 text-justify">This is my firts video of the feed. This is a multiline comment for testing purposes. I am learning to code with #Breathcode</p>
+                        <div class="card-body py-0 text-secondary">
+                            <i class="far fa-heart pl-2 d-inline-block"></i>
+                            <p class="d-inline-block pl-2">Comment...</p>
+                            <i class="fas fa-ellipsis-v pl-2 d-inline-block float-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">My first photo</h5>
+                            <h5 class="col-2 card-text text-secondary">12/14</h5>
+                        </div>
+                        <img src="https://picsum.photos/id/137/600/400" class="card-img-top">
+                        <p class="px-3 py-2 mb-0">23 likes</p>
+                        <p class="px-3 text-justify">This is my firts photo of the feed. This is a multiline comment for testing purposes. I am learning to code with #Breathcode</p>
+                        <div class="card-body py-0 text-secondary">
+                            <i class="far fa-heart pl-2 d-inline-block"></i>
+                            <p class="d-inline-block pl-2">Comment...</p>
+                            <i class="fas fa-ellipsis-v pl-2 d-inline-block float-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">My first photo</h5>
+                            <h5 class="col-2 card-text text-secondary">12/14</h5>
+                        </div>
+                        <img src="https://picsum.photos/id/397/600/400" class="card-img-top">
+                        <p class="px-3 py-2 mb-0">23 likes</p>
+                        <p class="px-3 text-justify">This is my firts photo of the feed. This is a multiline comment for testing purposes. I am learning to code with #Breathcode</p>
+                        <div class="card-body py-0 text-secondary">
+                            <i class="far fa-heart pl-2 d-inline-block"></i>
+                            <p class="d-inline-block pl-2">Comment...</p>
+                            <i class="fas fa-ellipsis-v pl-2 d-inline-block float-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card my-4 mx-auto" style="width: 600px;">
+                        <div class="row justify-content-between align-items-center p-3">
+                            <h5 class="col-10 card-tittle mb-0">My first video</h5>
+                            <h5 class="col-2 card-text text-secondary">12/14</h5>
+                        </div>
+                        <video class="img-fluid" playsinline autoplay muted loop style="justify-content: center;">
+                            <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4" >
+                        </video>                         
+                        <p class="px-3 py-2 mb-0">23 likes</p>
+                        <p class="px-3 text-justify">This is my firts video of the feed. This is a multiline comment for testing purposes. I am learning to code with #Breathcode</p>
+                        <div class="card-body py-0 text-secondary">
+                            <i class="far fa-heart pl-2 d-inline-block"></i>
+                            <p class="d-inline-block pl-2">Comment...</p>
+                            <i class="fas fa-ellipsis-v pl-2 d-inline-block float-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal (fuera de la navbar fixed porque si no no funciona - se queda toda la pantalla sombreada)-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 8px;">
+                                <label for="message-text" class="col-form-label"></label>
+                                <i class="fas fa-camera" style="font-size: 20px; margin-right: 2px; padding: 4px; border: 1.5px solid lightgray; border-radius: 3px;"></i>
+                                <i class="fas fa-map-marker-alt" style="font-size: 20px; padding: 4px 6px; border: 1.5px solid lightgray; border-radius: 3px;"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary"
+                            data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
